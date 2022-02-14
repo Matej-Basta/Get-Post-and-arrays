@@ -5,6 +5,11 @@ $page = "home";
 
 $items = [];
 
+if(!empty($_POST["items"])) {
+    var_dump($_POST);
+    $items = $_POST["items"];
+}
+
 if(isset($_GET["page"])) {
     $page = $_GET["page"];
 }
