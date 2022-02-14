@@ -3,6 +3,8 @@
 $page_title = "Shopping List";
 $page = "home";
 
+$items = [];
+
 if(isset($_GET["page"])) {
     $page = $_GET["page"];
 }
@@ -18,6 +20,10 @@ if(isset($_GET["page"])) {
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <a href="?page=home">Home</a>
+        <a href="?page=form">Form</a>
+    </nav>
     
     <h1><?= $page_title ?></h1>
 
