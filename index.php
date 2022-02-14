@@ -23,7 +23,9 @@ if(isset($_GET["page"])) {
 
     <?php if($page === "home") : ?>
         <?php include_once "home.php" ?>
-    <?php endif ; ?>    
+    <?php elseif($page === "form") : ?>
+        <?php include_once "form.php" ?>
+    <?php endif ; ?> 
     
 </body>
 </html>
